@@ -1,27 +1,30 @@
-# AngularSkyCast
+# Angular-Sky-Cast
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.2.
+## Descrição
 
-## Development server
+Angular-Sky-Cast é um projeto elegante e interativo que exibe dados meteorológicos atuais consumindo a API do OpenWeather. Este projeto utiliza o framework Angular para criar uma aplicação web que proporciona aos usuários informações climáticas precisas e atualizadas de qualquer localidade.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Características
 
-## Code scaffolding
+- **Consumo da API OpenWeather**: Integração direta com a API do OpenWeather para obter dados meteorológicos em tempo real.
+- **Componentes Angular Material**: Utilização de componentes do Angular Material.
+- **Modularidade**: O projeto é estruturado em módulos para organizar o código de forma clara, facilitando a manutenção e escalabilidade.
+- **Pipes Customizados**: Utilização de Pipes para a formatação e manipulação dos dados meteorológicos recebidos da API.
+- **Diretivas Estruturais**: Uso de ngIf para condicionalmente renderizar elementos da interface baseando-se em determinadas condições dos dados.
+- **@Input Decorator**: Permite a passagem de dados entre componentes, enriquecendo a interatividade e reutilização de componentes.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Pré-requisitos
 
-## Build
+- Node.js
+- Angular CLI
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Configuração
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+1. **Clone o repositório do projeto:**
+git clone https://github.com/guikipper/angular-sky-cast
+2. **Navegue até a pasta do projeto:**
+Uma vez que o clone esteja completo, entre na pasta do projeto: cd angular-sky-cast
+3. **Instale as dependências:**
+npm install
+3. **Execute o projeto:**
+ng serve
