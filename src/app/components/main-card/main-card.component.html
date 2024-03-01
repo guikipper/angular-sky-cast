@@ -1,0 +1,41 @@
+<div class="maincard">
+    <div class="maincard__search">
+        <form class="example-form maincard-form" (ngSubmit)="searchCityWeather()">
+            <mat-form-field class="example-full-width">
+              <mat-label>Informe a cidade</mat-label>
+              <input matInput placeholder="Ex. Belo Horizonte" [(ngModel)]="inputText"  [ngModelOptions]="{standalone: true}"/>
+            </mat-form-field>
+            <button type="submit" mat-raised-button color="primary">Buscar</button>
+        </form>
+    </div>
+    
+    <div class="maincard__result"  *ngIf="showResult">
+
+        <div class="header-result">
+            <h2>{{ weatherData.city_name }}</h2>
+            <img class="header-icon" [src]="'http://openweathermap.org/img/wn/' + weatherData.weather[0].icon + '.png'">
+
+            <p>{{ weatherData.weather[0].description | titlecase }} </p>
+            <app-clock></app-clock>
+        </div>
+
+        <div class="content-result">
+            <app-text-api-data description="Temperatura máxima:" [value]="weatherData.max_temperature | Temperature"></app-text-api-data>
+            <app-text-api-data description="Temperatura mínima" [value]="weatherData.min_temperature | Temperature"></app-text-api-data>
+            <app-text-api-data description="Sensação Térmica:" [value]="weatherData.thermal_sensation | Temperature"></app-text-api-data>
+            <app-text-api-data description="Umidade" [value]="weatherData.umidity | Umidity"></app-text-api-data>
+            <app-text-api-data description="Pressão" [value]="weatherData.pressure | Pressure"></app-text-api-data>
+            <app-text-api-data description="Visibilidade" [value]="weatherData.visibility | Visibility"></app-text-api-data> 
+        </div>
+
+        <div class="wind-data">
+            <p>Informações do Vento<p>
+            <app-text-api-data description="Direção" [value]="weatherData.wind.deg | WindDirection"></app-text-api-data>
+            <app-text-api-data description="Velocidade" [value]="weatherData.wind.speed | Speed"></app-text-api-data>
+        </div>
+
+        
+       
+    </div>
+</div>
+

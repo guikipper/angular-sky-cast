@@ -1,0 +1,34 @@
+.asc-c-card {
+
+    width: 300px;
+    height: 400px;
+
+    &__header {
+        display: block;
+        height: 30%;
+        background-color: #f18701;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    &__content {
+        display: block;
+        height: 70%;
+        background-color: #7678ed;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    &__main-text {
+        font-size: 30px;
+        font-weight: 500;
+    }
+    &__sub-text {
+        font-size: 18px;
+        font-weight: 300;
+        letter-spacing: 3px;
+    }
+    &__description-text {
+        font-size: 20px;
+        height: 300;
+    }
+}
