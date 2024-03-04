@@ -28,3 +28,6 @@ Uma vez que o clone esteja completo, entre na pasta do projeto: cd angular-sky-c
 npm install
 3. **Execute o projeto:**
 ng serve
+
+**Print do Projeto**
+![Captura de tela 2024-03-01 154252](https://github.com/guikipper/angular-sky-cast/assets/33471042/81692849-6f02-4189-a822-d340a07cdf3c)
